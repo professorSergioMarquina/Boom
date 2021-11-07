@@ -35,7 +35,7 @@ Very Sempil Bot Auto Filter bot
 
 
 ###ANNA BEN REPO
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/anna_ben_2.09)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sreejithmadmax/annaben-2.09)
 ### Hard Way
 
 ```bash
