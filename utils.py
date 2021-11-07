@@ -88,8 +88,13 @@ async def get_poster(query, bulk=False, id=False):
         movieid = int(query)
     movie = imdb.get_movie(movieid)
     title = movie.get('title')
+    votes = str(movie.get("votes"))
+    country = str(movie.get("country"))
+    lang = str(movie.get("lang"))
+    runtime = str(movie.get("runtime"))
     genres = ", ".join(movie.get("genres")) if movie.get("genres") else None
     rating = str(movie.get("rating"))
+    actors = str(movie.get("actors"))
     if movie.get("original air date"):
         date = movie["original air date"]
     elif movie.get("year"):
@@ -107,32 +112,17 @@ async def get_poster(query, bulk=False, id=False):
         plot = plot[0:800] + "..."
 
     return {
-        'title': movie.get('title'),
-        'votes': movie.get('votes'),
-        "aka": list_to_str(movie.get("akas")),
-        "seasons": movie.get("number of seasons"),
-        "box_office": movie.get('box office'),
-        'localized_title': movie.get('localized title'),
-        'kind': movie.get("kind"),
-        "imdb_id": f"tt{movie.get('imdbID')}",
-        "cast": list_to_str(movie.get("cast")),
-        "runtime": list_to_str(movie.get("runtimes")),
-        "countries": list_to_str(movie.get("countries")),
-        "certificates": list_to_str(movie.get("certificates")),
-        "languages": list_to_str(movie.get("languages")),
-        "director": list_to_str(movie.get("director")),
-        "writer":list_to_str(movie.get("writer")),
-        "producer":list_to_str(movie.get("producer")),
-        "composer":list_to_str(movie.get("composer")) ,
-        "cinematographer":list_to_str(movie.get("cinematographer")),
-        "music_team": list_to_str(movie.get("music department")),
-        "distributors": list_to_str(movie.get("distributors")),
-        'release_date': date,
-        'year': movie.get('year'),
-        'genres': list_to_str(movie.get("genres")),
-        'poster': movie.get('full-size cover url'),
+        'title': title,
+        'year': date,
+        'country': country,
+        'genres': genres,
+        'poster': poster,
         'plot': plot,
-        'rating': str(movie.get("rating")),
+        'votes': votes,
+        'rating': rating,
+        'lang': lang,
+        'runtime': runtime,
+        'actors': actors,
         'url':f'https://www.imdb.com/title/tt{movieid}'
     }
 
