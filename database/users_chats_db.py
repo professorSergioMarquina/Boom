@@ -51,7 +51,7 @@ class Database:
         )
         await self.col.update_one({'id': id}, {'$set': {'ban_status': ban_status}})
     
-    async def ban_user(self, user_id, ban_reason="No Reason"):
+    async def ban_user(self, user_id, ban_reason="എന്തേലും കഴപ്പ് കാണിച്ചു കാണും🤣 ബാഡ് Boys 🤧"):
         ban_status = dict(
             is_banned=True,
             ban_reason=ban_reason
@@ -106,7 +106,7 @@ class Database:
         await self.grp.update_one({'id': int(id)}, {'$set': {'chat_status': chat_status}})
     
 
-    async def disable_chat(self, chat, reason="No Reason"):
+    async def disable_chat(self, chat, reason="Bad Boys will be Removed🤧"):
         chat_status=dict(
             is_disabled=True,
             reason=reason,
