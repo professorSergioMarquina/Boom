@@ -81,17 +81,17 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🔰 ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ🔰", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("🔄 Re-Try 🔄", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
-            reply_markup=InlineKeyboardMarkup(btn),
+            text="**🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വേണോ🤧? അതിനായി അദ്യം ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക... \n[🔰Click Join Channel🔰 And Join Then Click 🔃Re Try🔃] \nJoin ചെയ്ത ശേഷം🔃 TrY Again 🔃 ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ മൂവി കിട്ടുന്നതാണ്..!**",
+                    reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
@@ -119,7 +119,7 @@ async def start(client, message):
     file_id = message.command[1]
     files_ = await get_file_details(file_id)
     if not files_:
-        return await message.reply('No such file exist.')
+        return await message.reply('No such file exist 😏.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -183,9 +183,9 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳", quote=True)
+        msg = await message.reply("Processing...📃", quote=True)
     else:
-        await message.reply('Reply to file with /delete which you want to delete', quote=True)
+        await message.reply('🤭 Reply to file 🗂️ with /delete which you want to delete 🚮', quote=True)
         return
 
     for file_type in ("document", "video", "audio"):
@@ -193,7 +193,7 @@ async def delete(bot, message):
         if media is not None:
             break
     else:
-        await msg.edit('This is not supported file format')
+        await msg.edit('😏 This is not supported file format')
         return
 
     result = await Media.collection.delete_one({
@@ -202,25 +202,25 @@ async def delete(bot, message):
         'mime_type': media.mime_type
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database')
+        await msg.edit('🗂️ File is successfully deleted from database 🚮')
     else:
-        await msg.edit('File not found in database')
+        await msg.edit('🤧 File not found in database')
 
 
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        'This will delete all indexed files.\nDo you want to continue??',
+        '😏 This will delete all indexed files 🗂️.\n🙄 Do you want to continue??',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="YES", callback_data="autofilter_delete"
+                        text="✅️ YES", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        text="🚫 No", callback_data="close_data"
                     )
                 ],
             ]
@@ -233,5 +233,5 @@ async def delete_all_index(bot, message):
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
     await message.answer()
-    await message.message.edit('Succesfully Deleted All The Indexed Files.')
+    await message.message.edit('✅️Succesfully Deleted All The Indexed Files 🗂️.')
 
