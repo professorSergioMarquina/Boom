@@ -13,6 +13,24 @@ from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
 
+PHOTO = [
+    "https://telegra.ph/file/17b664dd55dcb4dd81185.jpg",
+    "https://telegra.ph/file/c6d58e58e003f036470da.jpg",
+    "https://telegra.ph/file/c3fad6a10f05ece01b51d.jpg",
+    "https://telegra.ph/file/bc74adbb9fa4ad32def73.jpg",
+    "https://telegra.ph/file/3a2de7f981f0249309a1b.jpg",
+    "https://telegra.ph/file/f5a444586a6f28d154f6c.jpg",
+    "https://telegra.ph/file/f6bb83a00b1337b3e0a60.jpg",
+    "https://telegra.ph/file/9690286c14706e018139b.jpg",
+    "https://telegra.ph/file/6c14e6319d02b6ceb58bc.jpg",
+    "https://telegra.ph/file/a8879a233eab699365352.jpg",
+    "https://telegra.ph/file/2faea362c1ca8dfbeb145.jpg",
+    "https://telegra.ph/file/28a1c0ec15b390489eade.jpg",
+    "https://telegra.ph/file/3b43ac420e44701ac18ce.jpg",
+    "https://telegra.ph/file/1d5f212f2a62cbbf67f85.jpg",
+    "https://telegra.ph/file/fc2a4f43da7289eb64f49.jpg"
+]
+
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
@@ -48,7 +66,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=f"{random.choice(PHOTO)}",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -92,7 +110,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=f"{random.choice(PHOTO)}",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
