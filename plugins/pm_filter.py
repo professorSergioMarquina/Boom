@@ -413,35 +413,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/@dqautofl_bot?startgroup=true')
+            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url='http://t.me/Imdbfilter_bot?startgroup=true')
             ],[
-            InlineKeyboardButton('©️Channel', url='https://t.me/tg_bots_updates'),
-            InlineKeyboardButton('♻️Group', url='https://t.me/EDIT_REPO')
+            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🔆 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/Movies_Club_2019'),
+            InlineKeyboardButton('🧭 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/mcnewmovies')
             ],[
-            InlineKeyboardButton('ᦔꫀꪜ', url='https://t.me/Pro_editor_tg'),
-            InlineKeyboardButton('Share me🤠', url='https://t.me/share/url?url=https://t.me/dqautofl_bot')
-            ],[
-            InlineKeyboardButton('ANNA UPDATES😉', url='https://t.me/team_annaben')
+            InlineKeyboardButton('🕵‍♂️ 𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝𝚜 🕵‍♀️', url='http://t.me/EvaMariaSupport')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.START_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton(' 𝙼𝚊𝚗𝚞𝚎𝚕 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='manuelfilter'),
+            InlineKeyboardButton(' 𝙰𝚞𝚝𝚘 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton(' 𝙲𝚘𝚗𝚗𝚎𝚌𝚝𝚒𝚘𝚗', callback_data='coct'),
+            InlineKeyboardButton(' 𝙴𝚡𝚝𝚛𝚊 𝙼𝚘𝚍𝚜', callback_data='extra')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton(' 𝙷𝚘𝚖𝚎', callback_data='start'),
+            InlineKeyboardButton(' 𝚂𝚝𝚊𝚝𝚞𝚜', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -451,15 +449,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/annaben_updates'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('😎 𝙾𝚠𝚗𝚎𝚛', url='https://t.me/myfreak123'),
+            InlineKeyboardButton('🤴 𝙳𝚎𝚟', url='https://t.me/Sanoob_Achu_18')
+            ],[
+            InlineKeyboardButton('🏠 𝙷𝚘𝚖𝚎', callback_data='start'),
+            InlineKeyboardButton('🔐 𝙲𝚕𝚘𝚜𝚎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text=script.ABOUT_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
