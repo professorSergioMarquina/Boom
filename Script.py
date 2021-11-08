@@ -1,31 +1,26 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝑴𝒀 𝑵𝑨𝑴𝑬 , <a href='https://t.me/Dqautofl_bot'>𝐀𝐍𝐍𝐀 𝐁𝐄𝐍</a>, 𝑰𝒕'𝒔 𝑽𝒆𝒓𝒓𝒚 𝑬𝒂𝒔𝒚. 𝑱𝒖𝒂𝒕 𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒅𝒎𝒊𝒏, 𝑻𝒉𝒂𝒕𝒔 𝑨𝒍𝒍, 𝑰'𝑳𝑳 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑴𝑶𝑽𝑰𝑬𝑺 𝑻𝒉𝒆𝒓𝒆 🤓
-𝑯𝑬𝒀,<a href='http://t.me/Dqautofl_Bot?startgroup=true'>𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒏 𝑨𝒅𝒎𝒊𝒏 𝑻𝒉𝒆𝒓𝒆</a>
+    START_TXT = """𝙃𝙖𝙞 {},
+𝙈𝙔 𝙉𝘼𝙈𝙀 , <a href='https://t.me/Imdbfilter_bot'>°†° «[𝐂𝐈𝐍𝐃𝐄𝐑𝐄𝐋𝐋𝐀 𝐓𝐆]» °†°</a>, 𝑱𝒖𝒂𝒕 𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒅𝒎𝒊𝒏,𝑰'𝑳𝑳 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑴𝑶𝑽𝑰𝑬𝑺 𝑻𝒉𝒆𝒓𝒆 🤓
+𝙃𝘼𝙄,<a href='http://t.me/Imdbfilter_bot?startgroup=true'>𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒏 𝑨𝒅𝒎𝒊𝒏 😝𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨✨️</a>
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/pro_editor_tg"> 𝖫𝖺𝗅𝗅𝗎ˡᵃˡˡᵘˢ </a>"""
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/Sanoob_Achu_18">❤♡ Ä¢hµ Vj ♡❤</a>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝘏𝘦𝘳𝘦 𝘐𝘴 𝘛𝘩𝘦 𝘏𝘦𝘭𝘱 𝘍𝘰𝘳 𝘔𝘺 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴."""
     ABOUT_TXT = """
-✪ 𝓜𝔂𝓷𝓪𝓶𝓮: <a href="https://t.me/Dqautofl_Bot"> 𝑨𝑵𝑵𝑨 𝑩𝑬𝑵 </a>
-✪ 𝓒𝓻𝓮𝓪𝓽𝓸𝓻: <a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>
-✪ 𝓛𝓲𝓫𝓻𝓮𝓪𝓻𝓻𝔂: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✪ 𝓛𝓪𝓷𝓰𝓾𝓪𝓰𝓮: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✪ 𝓓𝓪𝓽𝓪 𝓑𝓪𝓼𝓮: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✪ 𝓑𝓸𝓽 𝓼𝓮𝓻𝓿𝓮𝓻: 𝙷𝙴𝚁𝙾𝙺𝚄
-✪ 𝓑𝓾𝓲𝓵𝓭 𝓢𝓽𝓪𝓽𝓾𝓼: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+꧁•⊹٭𝙳𝚎𝚟𝚘𝚕𝚘𝚙𝚎𝚛 𝙾𝚗𝚕𝚢٭⊹•꧂
+"""
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂 𝒐𝒑𝒆𝒏 𝒔𝒐𝒖𝒓𝒄𝒆 𝒑𝒓𝒐𝒋𝒆𝒄𝒕. 
-- 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒐𝒏𝒕𝒂𝒄𝒕𝒔 𝒎𝒚 𝒎𝒂𝒔𝒕𝒆𝒓 𝒇𝒊𝒓 𝒎𝒚 𝒅𝒐𝒖𝒃𝒕𝒔 𝒂𝒏𝒅 𝒄𝒐𝒎𝒑𝒍𝒂𝒏𝒕𝒆𝒔
+-(☝◞‸◟)☞ 𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂 𝒐𝒑𝒆𝒏 𝒔𝒐𝒖𝒓𝒄𝒆 𝒑𝒓𝒐𝒋𝒆𝒄𝒕.
+- ٭⊹¤.•⨳•.*☆✬ 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒐𝒏𝒕𝒂𝒄𝒕 𝒎𝒚 Dҽʋ🤴✬☆*.•⨳•.¤⊹٭
 
-𝗠𝗔𝗦𝗧𝗘𝗥:
-<a href="https://t.me/team_annaben"> 𝑻𝑬𝑨𝑴 𝑨𝑵𝑵𝑨 </a>  """
+Dҽʋ🤴:
+<a href="https://t.me/Sanoob_Achu_18">ǟƈɦʊ ʋʝ</a>  """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword  will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. 𝑨𝒏𝒏𝒂 𝒃𝒆𝒏 𝒔𝒉𝒐𝒖𝒍𝒅 𝒉𝒂𝒗𝒆 𝒂𝒅𝒎𝒊𝒏 𝒑𝒓𝒊𝒗𝒊𝒍𝒍𝒂𝒈𝒆.
+1. 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆 𝒔𝒉𝒐𝒖𝒍𝒅 𝒉𝒂𝒗𝒆 𝒂𝒅𝒎𝒊𝒏 𝒑𝒓𝒊𝒗𝒊𝒍𝒍𝒂𝒈𝒆.
 2. 𝑶𝒏𝒍𝒚 𝒂𝒅𝒎𝒊𝒏𝒔 𝒄𝒂𝒏 𝒂𝒅𝒅 𝒇𝒊𝒍𝒕𝒆𝒓𝒔 𝒊𝒏 𝒂 𝒄𝒉𝒂𝒕.
 3. 𝑨𝒍𝒆𝒓𝒕 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒉𝒂𝒗𝒆 𝒂 𝒍𝒊𝒎𝒊𝒕 𝒐𝒇 64 𝒄𝒉𝒂𝒓𝒆𝒄𝒕𝒆𝒓𝒔.
 
@@ -36,15 +31,15 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Anna ben Supports both url and alert inline buttons.
+- 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆  Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. ANNA BEN supports buttons with any telegram media type.
+2. 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆 supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https//t.me/EvaMariaBot)</code>
+<code>[Button Text](buttonurl:https//t.me/𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -71,7 +66,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of tessa
+these are the extra features of 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
@@ -99,12 +94,12 @@ This module only works for my admins
 ✪ 𝑻𝒐𝒕𝒂𝒍 𝑪𝒉𝒂𝒕𝒔: <code>{}</code>
 ✪ 𝑼𝒔𝒆𝒅 𝑺𝒕𝒐𝒓𝒂𝒈𝒆: <code>{}</code> 𝙼𝚒𝙱
 ✪ 𝑭𝒓𝒆𝒆 𝑺𝒕𝒐𝒓𝒂𝒈𝒆: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+    LOG_TEXT_G = """👩‍👩‍👦‍👦New Fam👩‍👩‍👦‍👦
+♻️Group = {}(<code>{}</code>)
+👩‍👩‍👦‍👦Total Members = <code>{}</code>
+➕️Added By - {}
 """
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
+    LOG_TEXT_P = """💞New Chunk💞
+☯️ID - <code>{}</code>
+🗣️Name - {}
 """
