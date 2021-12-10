@@ -3,18 +3,31 @@ class script(object):
 𝙸 𝙰𝚖 𝙰 𝙿𝚛𝚎 𝙵𝚞𝚗𝚌𝚝𝚒𝚘𝚗𝚎𝚍 𝚁𝚘𝚋𝚘𝚝 𝙽𝚊𝚖𝚎𝚍,\n <a href='https://t.me/Imdbfilter_bot'>°†° «[𝐂𝐈𝐍𝐃𝐄𝐑𝐄𝐋𝐋𝐀 𝐓𝐆]» °†°</a>, \n\n𝑱𝒖𝒂𝒕 𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒅𝒎𝒊𝒏,𝑰'𝑳𝑳 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑴𝑶𝑽𝑰𝑬𝑺 𝑻𝒉𝒆𝒓𝒆 🤓\n
 <a href='http://t.me/Imdbfilter_bot?startgroup=true'>𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒏 𝑨𝒅𝒎𝒊𝒏 </a>\n😝𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨✨️
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/Sanoob_Achu_18">❤♡ Ä¢hµ Vj ♡❤</a>"""
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝘏𝘦𝘳𝘦 𝘐𝘴 𝘛𝘩𝘦 𝘏𝘦𝘭𝘱 𝘍𝘰𝘳 𝘔𝘺 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴."""
     ABOUT_TXT = """
-꧁•⊹٭𝙳𝚎𝚟𝚘𝚕𝚘𝚙𝚎𝚛 𝙾𝚗𝚕𝚢٭⊹•꧂
+ IAM JUST A  Auto-Filter-Bot 🚶‍♂️⚠️
+
+➪ 𝑴𝒚 𝒏𝒂𝒎𝒆 : <a href="https://t.me/Imdbfilter_bot">𝙲𝚒𝚗𝚍𝚎𝚛𝚎𝚕𝚕𝚊</a>
+➪ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : <a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>
+➪ 𝑪𝒓𝒆𝒅𝒊𝒕𝒔 : <a href="https://t.me/BlinderTG">Everyone in this journey</a>
+➪ 𝑳𝒊𝒃𝒓𝒂𝒓𝒚 : <a href="https://docs.pyrogram.org/">𝑷ʏʀᴏɢʀᴀᴍ</a>📜
+➪ 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 : <a href="https://docs.pyrogram.org/">𝑷ʏᴛʜᴏɴ 3</a>
+➪ 𝑫𝒂𝒕𝒂 𝒃𝒂𝒔𝒆 : <a href="https://www.mongodb.com/">𝑴ᴏɴɢᴏ 𝑫ʙ</a>
+➪ 𝑩𝒐𝒕 𝒔𝒆𝒓𝒗𝒆𝒓 : <a href="https://dashboard.heroku.com/apps">𝑯ᴇʀᴏᴋᴜ</a>
+➪ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑪𝒐𝒅𝒆 : <a href="https://t.me/Movies_Club_2019">👉 𝑪ʟɪᴄᴋ 𝑯ᴇʀᴇ</a>
+➪ 𝑩𝒖𝒊𝒍𝒅 𝑺𝒕𝒂𝒕𝒖𝒔 : <a href="https://t.me/Imdbautofilter_bot">v1.0.1 [ 𝑩ᴇᴛᴀ ]</a>
+
+
+🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️
 """
     SOURCE_TXT = """<b>NOTE:</b>
 -(☝◞‸◟)☞ 𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂 𝒐𝒑𝒆𝒏 𝒔𝒐𝒖𝒓𝒄𝒆 𝒑𝒓𝒐𝒋𝒆𝒄𝒕.
-- ٭⊹¤.•⨳•.*☆✬ 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒐𝒏𝒕𝒂𝒄𝒕 𝒎𝒚 Dҽʋ🤴✬☆*.•⨳•.¤⊹٭
+- ٭⊹¤.•⨳•.*☆✬ 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒐𝒏𝒕𝒂𝒄𝒕 𝒎𝒚 Dҽʋ<a href="https://docs.pyrogram.org/">𝑷ʏʀᴏɢʀᴀᴍ</a>🤴✬☆*.•⨳•.¤⊹٭
 
 Dҽʋ🤴:
-<a href="https://t.me/Sanoob_Achu_18">ǟƈɦʊ ʋʝ</a>  """
+<a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>  """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword  will respond whenever a keyword is found the message
