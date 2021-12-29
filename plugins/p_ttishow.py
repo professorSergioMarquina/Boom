@@ -41,7 +41,7 @@ async def save_group(bot, message):
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thanks Brooh!💞 To Adding Me In {message.chat.title} Group...❣️\n\nഗ്രൂപ്പ്‌ ഒരേ പൊളി✌️\nനന്തേലും പ്രശ്നം എന്റെ ഭാഗത്തു നിന്നും ഉണ്ടായാൽ @myfreak123 👈ആശാനെ അറിയിച്ചാൽ മതി😎.</b>",
+            text=f"<b>Thanks {u.mention} Brooh!💞 To Adding Me In {message.chat.title} Group...❣️\n\nഗ്രൂപ്പ്‌ ഒരേ പൊളി✌️\nനന്തേലും പ്രശ്നം എന്റെ ഭാഗത്തു നിന്നും ഉണ്ടായാൽ @myfreak123 👈ആശാനെ അറിയിച്ചാൽ മതി😎.</b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
