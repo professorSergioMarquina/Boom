@@ -39,7 +39,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        print("Bot stopped. Bye.")
+        print("ബോട്ടിന്റെ പണി കഴിഞ്ഞ്🤭.")
 
 
 app = Bot()
