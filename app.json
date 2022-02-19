@@ -50,6 +50,31 @@
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
             "value": ""
         },
+        "P_TTI_SHOW_OFF": {
+            "description": "pm senting",
+            "value": "True",
+            "required": false
+        },
+        "SPELL_CHECK_REPLY": {
+            "description": "pm senting",
+            "value": "True",
+            "required": false
+        },
+        "SINGLE_BUTTON": {
+            "description": "Spell check",
+            "value": "False",
+            "required": false
+        },
+        "IMDB": {
+            "description": "imdb or auto",
+            "value": "True",
+            "required": false
+        },
+        "MAX_LIST_ELM": {
+            "description": "imdb list elements longer",
+            "value": "3",
+            "required": false
+        },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "value": "",
@@ -62,6 +87,11 @@
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
+            "value": "False",
+            "required": false
+        },
+        "LONG_IMDB_DESCRIPTION": {
+            "description": "imdb caption longer",
             "value": "False",
             "required": false
         },
