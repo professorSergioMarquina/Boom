@@ -98,7 +98,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝘾𝙡𝙤𝙨𝙚', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -112,7 +112,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝘾𝙡𝙤𝙨𝙚', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -152,10 +152,16 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
     btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{imdb.get('title')}",
+                    text=f"🔖{imdb.get('title')} - {imdb.get('year')}🔖",
                     url=imdb['url'],
                 )
-            ]
+            ],
+            [
+                InlineKeyboardButton(
+                    text=f"✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️",
+                    url="https://t.me/UrvashiTheaters"
+                )
+            ],
         ]
     if imdb:
         caption = IMDB_TEMPLATE.format(
