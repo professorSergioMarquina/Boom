@@ -14,32 +14,28 @@ from utils import get_size, is_subscribed, temp
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/17b664dd55dcb4dd81185.jpg",
-    "https://telegra.ph/file/c6d58e58e003f036470da.jpg",
-    "https://telegra.ph/file/c3fad6a10f05ece01b51d.jpg",
-    "https://telegra.ph/file/bc74adbb9fa4ad32def73.jpg",
-    "https://telegra.ph/file/3a2de7f981f0249309a1b.jpg",
-    "https://telegra.ph/file/f5a444586a6f28d154f6c.jpg",
-    "https://telegra.ph/file/f6bb83a00b1337b3e0a60.jpg",
-    "https://telegra.ph/file/9690286c14706e018139b.jpg",
-    "https://telegra.ph/file/6c14e6319d02b6ceb58bc.jpg",
-    "https://telegra.ph/file/a8879a233eab699365352.jpg",
-    "https://telegra.ph/file/2faea362c1ca8dfbeb145.jpg",
-    "https://telegra.ph/file/28a1c0ec15b390489eade.jpg",
-    "https://telegra.ph/file/3b43ac420e44701ac18ce.jpg",
-    "https://telegra.ph/file/1d5f212f2a62cbbf67f85.jpg",
-    "https://telegra.ph/file/fc2a4f43da7289eb64f49.jpg"
+    "https://telegra.ph/file/4629d875d37255f891289.jpg",
+    "https://telegra.ph/file/f6f4d7cf4452f2c63dd3d.jpg",
+    "https://telegra.ph/file/8d64512dd6584f371e2a5.jpg",
+    "https://telegra.ph/file/bab7cd39a3d7a2d377b66.jpg",
+    "https://telegra.ph/file/c9f6b0978356de3bddfdc.jpg"
 ]
 
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-            InlineKeyboardButton('♻️ 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/Movies_Club_2019'),
-            InlineKeyboardButton('⭕️ 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/mcnewmovies')
-            ],[
-            InlineKeyboardButton('🕵‍♂️ 𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝𝚜 🕵‍♀️', url='http://t.me/EvaMariaSupport')
-        ]]
+        InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+    ],[
+        InlineKeyboardButton('🤴 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬', callback_data='source'),
+        InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛠', url='http://t.me/EvaMariaSupport')
+    ],[
+        InlineKeyboardButton('🙌 𝐇𝐞𝐥𝐩', callback_data='help'),
+        InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 🤖', callback_data='about')
+    ],[
+        InlineKeyboardButton('🎉 𝐀𝐜𝐭𝐢𝐯𝐞𝐬', callback_data='stats'),
+        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -53,17 +49,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url='http://t.me/Imdbfilter_bot?startgroup=true')
-            ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('🤴 𝙳𝚎𝚟', url='https://t.me/BlinderTG'),
-            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-            ],[
-            InlineKeyboardButton('♻️ 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/Movies_Club_2019'),
-            InlineKeyboardButton('⭕️ 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/mcnewmovies')
-            ],[
-            InlineKeyboardButton('🕵‍♂️ 𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝𝚜 🕵‍♀️', url='http://t.me/EvaMariaSupport')
-        ]]
+        InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+    ],[
+        InlineKeyboardButton('🤴 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬', callback_data='source'),
+        InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛠', url='http://t.me/EvaMariaSupport')
+    ],[
+        InlineKeyboardButton('🙌 𝐇𝐞𝐥𝐩', callback_data='help'),
+        InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 🤖', callback_data='about')
+    ],[
+        InlineKeyboardButton('🎉 𝐀𝐜𝐭𝐢𝐯𝐞𝐬', callback_data='stats'),
+        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}",
@@ -97,17 +93,17 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url='http://t.me/Imdbfilter_bot?startgroup=true')
-            ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('🤴 𝙳𝚎𝚟', url='https://t.me/BlinderTG'),
-            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-            ],[
-            InlineKeyboardButton('♻️ 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/Movies_Club_2019'),
-            InlineKeyboardButton('⭕️ 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/mcnewmovies')
-            ],[
-            InlineKeyboardButton('🕵‍♂️ 𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝𝚜 🕵‍♀️', url='http://t.me/EvaMariaSupport')
-        ]]
+        InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+    ],[
+        InlineKeyboardButton('🤴 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬', callback_data='source'),
+        InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛠', url='http://t.me/EvaMariaSupport')
+    ],[
+        InlineKeyboardButton('🙌 𝐇𝐞𝐥𝐩', callback_data='help'),
+        InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 🤖', callback_data='about')
+    ],[
+        InlineKeyboardButton('🎉 𝐀𝐜𝐭𝐢𝐯𝐞𝐬', callback_data='stats'),
+        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}",
@@ -132,9 +128,16 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [[
+            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/UrvashiTheaters'),
+            InlineKeyboardButton('𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎭', url='https://t.me/Movies_Club_2019')
+            ],[
+            InlineKeyboardButton('🕵‍♂️ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 🕵‍♀️', url='http://t.me/EvaMariaSupport')
+        ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
+        reply_markup=InlineKeyboardMarkup(buttons),
         caption=f_caption,
         )
                     
@@ -215,12 +218,12 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="✅️ YES", callback_data="autofilter_delete"
+                        text="✅️ 𝙔𝙚𝙨", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="🚫 No", callback_data="close_data"
+                        text="🚫 𝙉𝙤", callback_data="close_data"
                     )
                 ],
             ]
