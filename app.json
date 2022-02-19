@@ -38,10 +38,6 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": ""
         },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "value": ""
-        },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "value": ""
