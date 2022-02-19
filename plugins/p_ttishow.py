@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('🗣️ Any Doubt 🗣️', url=f'https://t.me/Myfreak123')
+                InlineKeyboardButton('🗣️ 𝘼𝙣𝙮 𝘿𝙤𝙪𝙗𝙩 🗣️', url=f'https://t.me/PowerOfTG')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -37,11 +37,11 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('📢 Any Help 📢', url='https:/t.me/Myfreak123')
+            InlineKeyboardButton('📢 𝘼𝙣𝙮 𝙃𝙚𝙡𝙥 📢', url='https:/t.me/PowerOfTG')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thanks {u.mention} Brooh!💞 To Adding Me In {message.chat.title} Group...❣️\n\nഗ്രൂപ്പ്‌ ഒരേ പൊളി✌️\nനന്തേലും പ്രശ്നം എന്റെ ഭാഗത്തു നിന്നും ഉണ്ടായാൽ @myfreak123 👈ആശാനെ അറിയിച്ചാൽ മതി😎.</b>",
+            text=f"<b>Thanks {u.mention} Brooh!💞 To Adding Me In {message.chat.title} Group...❣️\n\nഗ്രൂപ്പ്‌ ഒരേ പൊളി✌️\nനന്തേലും പ്രശ്നം എന്റെ ഭാഗത്തു നിന്നും ഉണ്ടായാൽ @PowerOfTG 👈ആശാനെ അറിയിച്ചാൽ മതി😎.</b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
@@ -64,7 +64,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('𝙎𝙪𝙥𝙥𝙤𝙧𝙩', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -102,7 +102,7 @@ async def disable_chat(bot, message):
     await message.reply('😏 Chat Succesfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🗣️Any Doubts🗣️', url=f'https://t.me/Myfreak123')
+            InlineKeyboardButton('🗣️ 𝘼𝙣𝙮 𝘿𝙤𝙪𝙗𝙩 🗣️', url=f'https://t.me/PowerOfTG')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
