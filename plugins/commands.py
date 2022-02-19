@@ -77,13 +77,13 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔰 ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ🔰", url=invite_link.invite_link
+                    "🔰 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 🔰", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton("🔄 Re-Try 🔄", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("🔄 𝙍𝙚𝙩𝙧𝙮 🔄", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വേണോ🤧? അതിനായി അദ്യം ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക... \n[🔰Click Join Channel🔰 And Join Then Click 🔃Re Try🔃] \nJoin ചെയ്ത ശേഷം🔃 TrY Again 🔃 ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ മൂവി കിട്ടുന്നതാണ്..!**",
