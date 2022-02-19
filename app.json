@@ -66,6 +66,10 @@
             "value": "True",
             "required": false
         },
+        "IMDB_TEMPLATE": {
+            "description": "customise template",
+            "required": false
+        },
         "MAX_LIST_ELM": {
             "description": "imdb list elements longer",
             "value": "3",
