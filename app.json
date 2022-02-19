@@ -24,19 +24,19 @@
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "6236237"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": ""
+            "value": "11cdaeb5dfc331283b8c9799e22782a4"
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "value": ""
+            "value": "-1001537553966"
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
-            "value": ""
+            "value": "1961429680"
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
@@ -44,7 +44,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
-            "value": ""
+            "value": "BlinderTG"
         },
         "P_TTI_SHOW_OFF": {
             "description": "pm senting",
@@ -52,13 +52,13 @@
             "required": false
         },
         "SPELL_CHECK_REPLY": {
-            "description": "pm senting",
-            "value": "True",
+            "description": "Spelling correct",
+            "value": "False",
             "required": false
         },
         "SINGLE_BUTTON": {
-            "description": "Spell check",
-            "value": "False",
+            "description": "single or dual",
+            "value": "True",
             "required": false
         },
         "IMDB": {
@@ -73,7 +73,7 @@
         },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
-            "value": "",
+            "value": "1961429680",
             "required": false
         },
         "AUTH_CHANNEL": {
@@ -83,7 +83,7 @@
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
-            "value": "False",
+            "value": "True",
             "required": false
         },
         "LONG_IMDB_DESCRIPTION": {
@@ -102,7 +102,7 @@
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-            "value": ""
+            "value": "clusture0"
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
