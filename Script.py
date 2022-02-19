@@ -1,41 +1,47 @@
 class script(object):
     START_TXT = """𝙃𝙖𝙞 {},
-𝙸 𝙰𝚖 𝙰 𝙿𝚛𝚎 𝙵𝚞𝚗𝚌𝚝𝚒𝚘𝚗𝚎𝚍 𝚁𝚘𝚋𝚘𝚝 𝙽𝚊𝚖𝚎𝚍,\n <a href='https://t.me/Imdbfilter_bot'>°†° «[𝐂𝐈𝐍𝐃𝐄𝐑𝐄𝐋𝐋𝐀 𝐓𝐆]» °†°</a>, \n\n𝑱𝒖𝒂𝒕 𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒅𝒎𝒊𝒏,𝑰'𝑳𝑳 𝑷𝒓𝒐𝒗𝒊𝒅𝒆 𝑴𝑶𝑽𝑰𝑬𝑺 𝑻𝒉𝒆𝒓𝒆 🤓\n
-<a href='http://t.me/Imdbfilter_bot?startgroup=true'>𝑨𝒅𝒅 𝑴𝒆 𝑻𝒐 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑 𝑨𝒏𝒅 𝑴𝒂𝒌𝒆 𝑴𝒆 𝑨𝒏 𝑨𝒅𝒎𝒊𝒏 </a>\n😝𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨✨️
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝘏𝘦𝘳𝘦 𝘐𝘴 𝘛𝘩𝘦 𝘏𝘦𝘭𝘱 𝘍𝘰𝘳 𝘔𝘺 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴."""
+𝙄 𝘼𝙢 𝘼 𝙋𝙧𝙚 𝙁𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙚𝙙 𝙍𝙤𝙗𝙤𝙩 𝙉𝙖𝙢𝙚𝙙,\n <a href='https://t.me/Imdbfilter_bot'>`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a>,\n✴️ 𝙅𝙪𝙨𝙩 𝘼𝙙𝙙 𝙈𝙚 𝙏𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥\n✴️ 𝙈𝙖𝙠𝙚 𝙈𝙚 𝘼𝙨 𝘼𝙙𝙢𝙞𝙣\n✴️ 𝙄 𝙒𝙄𝙇𝙇 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 𝙈𝙊𝙑𝙄𝙀𝙎 𝙏𝙝𝙚𝙧𝙚\n✴️𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨 𝙊𝙣 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥✨️
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ: <a href="https://t.me/PowerOfTG">𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 𝙏𝙂 [𝙊𝙁𝙁𝙇𝙄𝙉𝙀]🇮🇳</a>"""
+    HELP_TXT = """𝙃𝙚𝙮 {}
+𝙃𝙚𝙧𝙚 𝙄𝙨 𝙏𝙝𝙚 𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝙈𝙮 𝘾𝙤𝙢𝙢𝙖𝙣𝙙."""
     ABOUT_TXT = """
- IAM JUST A  Auto-Filter-Bot 🚶‍♂️⚠️
+ 𝙄 𝘼𝙢 𝙅𝙪𝙨𝙩 𝘼 𝘼𝙪𝙩𝙤 𝙁𝙞𝙡𝙩𝙚𝙧 𝘽𝙤𝙩 🚶‍♂️⚠️
 
-➪ 𝑴𝒚 𝒏𝒂𝒎𝒆 : <a href="https://t.me/Imdbfilter_bot">𝙲𝚒𝚗𝚍𝚎𝚛𝚎𝚕𝚕𝚊</a>
-➪ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 : <a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>
-➪ 𝑪𝒓𝒆𝒅𝒊𝒕𝒔 : <a href="https://t.me/BlinderTG">Everyone in this journey</a>
-➪ 𝑳𝒊𝒃𝒓𝒂𝒓𝒚 : <a href="https://docs.pyrogram.org/">𝑷ʏʀᴏɢʀᴀᴍ</a>📜
-➪ 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 : <a href="https://docs.pyrogram.org/">𝑷ʏᴛʜᴏɴ 3</a>
-➪ 𝑫𝒂𝒕𝒂 𝒃𝒂𝒔𝒆 : <a href="https://www.mongodb.com/">𝑴ᴏɴɢᴏ 𝑫ʙ</a>
-➪ 𝑩𝒐𝒕 𝒔𝒆𝒓𝒗𝒆𝒓 : <a href="https://dashboard.heroku.com/apps">𝑯ᴇʀᴏᴋᴜ</a>
-➪ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑪𝒐𝒅𝒆 : <a href="https://t.me/Movies_Club_2019">👉 𝑪ʟɪᴄᴋ 𝑯ᴇʀᴇ</a>
-➪ 𝑩𝒖𝒊𝒍𝒅 𝑺𝒕𝒂𝒕𝒖𝒔 : <a href="https://t.me/Imdbautofilter_bot">v1.0.1 [ 𝑩ᴇᴛᴀ ]</a>
+➪ 𝙈𝙮 𝙉𝙖𝙢𝙚 : <a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a>
+➪ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : <a href="https://t.me/PowerOfTG">𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 𝙏𝙂 [𝙊𝙁𝙁𝙇𝙄𝙉𝙀]🇮🇳</a>
+➪ 𝘾𝙧𝙚𝙙𝙞𝙩𝙨 : <a href="https://t.me/PowerOfTG">𝙀𝙫𝙚𝙧𝙮𝙤𝙣𝙚 𝙞𝙣 𝙩𝙝𝙞𝙨 𝙟𝙤𝙪𝙧𝙣𝙚𝙮</a>
+➪ 𝙇𝙞𝙗𝙧𝙖𝙧𝙮 : <a href="https://docs.pyrogram.org/">𝙋𝙮𝙧𝙤𝙜𝙧𝙖𝙢</a>📜
+➪ 𝙇𝙖𝙣𝙜𝙪𝙖𝙜𝙚 : <a href="https://docs.pyrogram.org/">𝙋𝙮𝙩𝙝𝙤𝙣 3</a>
+➪ 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚 : <a href="https://www.mongodb.com/">𝙈𝙤𝙣𝙜𝙤 𝘿𝘽</a>
+➪ 𝘽𝙤𝙩 𝙎𝙚𝙧𝙫𝙚𝙧 : <a href="https://dashboard.heroku.com/apps">𝙃𝙚𝙧𝙤𝙠𝙪</a>
+➪ 𝙎𝙤𝙪𝙧𝙘𝙚 𝘾𝙤𝙙𝙚 : <a href="https://github.com/EvamariaTG/EvaMaria">👉 𝘾𝙡𝙞𝙘𝙠 𝙃𝙚𝙧𝙚</a>
+➪ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨 : <a href="https://t.me/Imdbautofilter_bot">𝙫1.0.1 [ 𝘽𝙀𝙏𝘼 ]</a>
 
-
-🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️
 """
     SOURCE_TXT = """<b>NOTE:</b>
--(☝◞‸◟)☞ 𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂 𝒐𝒑𝒆𝒏 𝒔𝒐𝒖𝒓𝒄𝒆 𝒑𝒓𝒐𝒋𝒆𝒄𝒕.
-- ٭⊹¤.•⨳•.*☆✬ 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒐𝒏𝒕𝒂𝒄𝒕 𝒎𝒚 Dҽʋ<a href="https://docs.pyrogram.org/">𝑷ʏʀᴏɢʀᴀᴍ</a>🤴✬☆*.•⨳•.¤⊹٭
+-<a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a> 𝙄𝙨 𝘼 𝙊𝙥𝙚𝙣 𝙎𝙤𝙪𝙧𝙘𝙚 𝙋𝙧𝙤𝙟𝙚𝙘𝙩💞
+-<a href="https://github.com/EvamariaTG/EvaMaria">💞𝙎𝙤𝙪𝙧𝙘𝙚 𝘾𝙤𝙙𝙚💞</a> 𝘼𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚
 
-Dҽʋ🤴:
-<a href="https://t.me/BlinderTG">𝙱𝙻𝙸𝙽𝙳𝙴𝚁 𝚃𝙶 [𝕆𝔽𝔽𝕃𝕀ℕ𝔼]🇮🇳</a>  """
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+𝘿𝙚𝙫𝙨🤴:
+➖➖➖
+<a href="https://t.me/subinps">𝙎𝙐𝘽𝙄𝙉💞</a>
+<a href="https://t.me/shamilhabeeb">𝙎𝙃𝘼𝙈𝙄𝙇 𝙃𝙖𝙗𝙚𝙚𝙗🇮🇳</a>
+<a href="https://github.com/Mahesh0253">𝙈𝙖𝙝𝙚𝙨𝙝🤖</a>
+<a href="https://github.com/pyrogram/pyrogram">𝘿𝘼𝙉🚀</a>
+<a href="https://t.me/jack_of_tg">𝙅𝘼𝘾𝙆🤸‍♀️</a>
+<a href="https://t.me/Physic_hybrid">𝙋𝙃𝙔𝙎𝙄𝘾_𝙃𝙔𝘽𝙍𝙄𝘿🇵🇹/🇦🇪</a>
+<a href="https://github.com/trojanzhex">𝙏𝙧𝙤𝙟𝙖𝙣𝙯🤓</a>
+<a href="https://t.me/PowerOfTG">𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 𝙏𝙂 [𝙊𝙁𝙁𝙇𝙄𝙉𝙀]🇮🇳</a>
+  """
+    MANUELFILTER_TXT = """𝙃𝙚𝙡𝙥: <b>𝙁𝙞𝙡𝙩𝙚𝙧𝙨</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword  will respond whenever a keyword is found the message
+- 𝙁𝙞𝙡𝙩𝙚𝙧 𝙞𝙨 𝙩𝙝𝙚 𝙛𝙚𝙖𝙩𝙪𝙧𝙚 𝙬𝙚𝙧𝙚 𝙪𝙨𝙚𝙧𝙨 𝙘𝙖𝙣 𝙨𝙚𝙩 𝙖𝙪𝙩𝙤𝙢𝙖𝙩𝙚𝙙 𝙧𝙚𝙥𝙡𝙞𝙚𝙨 𝙛𝙤𝙧 𝙖 𝙥𝙖𝙧𝙩𝙞𝙘𝙪𝙡𝙖𝙧 𝙠𝙚𝙮𝙬𝙤𝙧𝙙  𝙬𝙞𝙡𝙡 𝙧𝙚𝙨𝙥𝙤𝙣𝙙 𝙬𝙝𝙚𝙣𝙚𝙫𝙚𝙧 𝙖 𝙠𝙚𝙮𝙬𝙤𝙧𝙙 𝙞𝙨 𝙛𝙤𝙪𝙣𝙙 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚
 
 <b>NOTE:</b>
-1. 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆 𝒔𝒉𝒐𝒖𝒍𝒅 𝒉𝒂𝒗𝒆 𝒂𝒅𝒎𝒊𝒏 𝒑𝒓𝒊𝒗𝒊𝒍𝒍𝒂𝒈𝒆.
-2. 𝑶𝒏𝒍𝒚 𝒂𝒅𝒎𝒊𝒏𝒔 𝒄𝒂𝒏 𝒂𝒅𝒅 𝒇𝒊𝒍𝒕𝒆𝒓𝒔 𝒊𝒏 𝒂 𝒄𝒉𝒂𝒕.
-3. 𝑨𝒍𝒆𝒓𝒕 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒉𝒂𝒗𝒆 𝒂 𝒍𝒊𝒎𝒊𝒕 𝒐𝒇 64 𝒄𝒉𝒂𝒓𝒆𝒄𝒕𝒆𝒓𝒔.
+1. <a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a> 𝙎𝙝𝙤𝙪𝙡𝙙 𝙃𝙖𝙫𝙚 𝘼𝙙𝙢𝙞𝙣 𝙋𝙧𝙞𝙫𝙞𝙡𝙡𝙖𝙜𝙚.
+2. 𝙊𝙣𝙡𝙮 𝙂𝙧𝙤𝙪𝙥 𝘼𝙙𝙢𝙞𝙣𝙨 𝘾𝙖𝙣 𝘼𝙙𝙙 𝙁𝙞𝙡𝙩𝙚𝙧𝙨 𝙄𝙣 𝘼 𝘾𝙝𝙖𝙩.
+3. 𝘼𝙡𝙚𝙧𝙩 𝘽𝙪𝙩𝙩𝙤𝙣𝙨 𝙃𝙖𝙫𝙚 𝘼 𝙇𝙞𝙢𝙞𝙩 𝙊𝙛 64 𝘾𝙝𝙖𝙧𝙚𝙘𝙩𝙚𝙧𝙨.
 
 <b>Commands and Usage:</b>
 • /filter - <code>add a filter in chat</code>
