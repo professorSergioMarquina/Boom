@@ -38,66 +38,66 @@ class script(object):
 
 - 𝙁𝙞𝙡𝙩𝙚𝙧 𝙞𝙨 𝙩𝙝𝙚 𝙛𝙚𝙖𝙩𝙪𝙧𝙚 𝙬𝙚𝙧𝙚 𝙪𝙨𝙚𝙧𝙨 𝙘𝙖𝙣 𝙨𝙚𝙩 𝙖𝙪𝙩𝙤𝙢𝙖𝙩𝙚𝙙 𝙧𝙚𝙥𝙡𝙞𝙚𝙨 𝙛𝙤𝙧 𝙖 𝙥𝙖𝙧𝙩𝙞𝙘𝙪𝙡𝙖𝙧 𝙠𝙚𝙮𝙬𝙤𝙧𝙙  𝙬𝙞𝙡𝙡 𝙧𝙚𝙨𝙥𝙤𝙣𝙙 𝙬𝙝𝙚𝙣𝙚𝙫𝙚𝙧 𝙖 𝙠𝙚𝙮𝙬𝙤𝙧𝙙 𝙞𝙨 𝙛𝙤𝙪𝙣𝙙 𝙩𝙝𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚
 
-<b>NOTE:</b>
+<b>𝐍𝐎𝐓𝐄:</b>
 1. <a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a> 𝙎𝙝𝙤𝙪𝙡𝙙 𝙃𝙖𝙫𝙚 𝘼𝙙𝙢𝙞𝙣 𝙋𝙧𝙞𝙫𝙞𝙡𝙡𝙖𝙜𝙚.
 2. 𝙊𝙣𝙡𝙮 𝙂𝙧𝙤𝙪𝙥 𝘼𝙙𝙢𝙞𝙣𝙨 𝘾𝙖𝙣 𝘼𝙙𝙙 𝙁𝙞𝙡𝙩𝙚𝙧𝙨 𝙄𝙣 𝘼 𝘾𝙝𝙖𝙩.
 3. 𝘼𝙡𝙚𝙧𝙩 𝘽𝙪𝙩𝙩𝙤𝙣𝙨 𝙃𝙖𝙫𝙚 𝘼 𝙇𝙞𝙢𝙞𝙩 𝙊𝙛 64 𝘾𝙝𝙖𝙧𝙚𝙘𝙩𝙚𝙧𝙨.
 
-<b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
+<b>𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:</b>
+• /filter - 𝘼𝙙𝙙 𝙖 𝙛𝙞𝙡𝙩𝙚𝙧 𝙞𝙣 𝙘𝙝𝙖𝙩
+• /filters - 𝙇𝙞𝙨𝙩 𝙖𝙡𝙡 𝙩𝙝𝙚 𝙛𝙞𝙡𝙩𝙚𝙧𝙨 𝙤𝙛 𝙖 𝙘𝙝𝙖𝙩
+• /del - 𝘿𝙚𝙡𝙚𝙩𝙚 𝙖 𝙨𝙥𝙚𝙘𝙞𝙛𝙞𝙘 𝙛𝙞𝙡𝙩𝙚𝙧 𝙞𝙣 𝙘𝙝𝙖𝙩
+• /delall - 𝘿𝙚𝙡𝙚𝙩𝙚 𝙩𝙝𝙚 𝙬𝙝𝙤𝙡𝙚 𝙛𝙞𝙡𝙩𝙚𝙧𝙨 𝙞𝙣 𝙖 𝙘𝙝𝙖𝙩 (𝙘𝙝𝙖𝙩 𝙤𝙬𝙣𝙚𝙧 𝙤𝙣𝙡𝙮)"""
+    BUTTON_TXT = """𝐇𝐞𝐥𝐩: <b>𝘽𝙪𝙩𝙩𝙤𝙣𝙨</b>
 
-- 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆  Supports both url and alert inline buttons.
+- <a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a> 𝙎𝙪𝙥𝙥𝙤𝙧𝙩𝙨 𝙗𝙤𝙩𝙝 𝙪𝙧𝙡 𝙖𝙣𝙙 𝙖𝙡𝙚𝙧𝙩 𝙞𝙣𝙡𝙞𝙣𝙚 𝙗𝙪𝙩𝙩𝙤𝙣𝙨.
 
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆 supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+<b>𝐍𝐨𝐭𝐞:</b>
+1. 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙬𝙞𝙡𝙡 𝙣𝙤𝙩 𝙖𝙡𝙡𝙤𝙬𝙨 𝙮𝙤𝙪 𝙩𝙤 𝙨𝙚𝙣𝙙 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙬𝙞𝙩𝙝𝙤𝙪𝙩 𝙖𝙣𝙮 𝙘𝙤𝙣𝙩𝙚𝙣𝙩, 𝙨𝙤 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙨 𝙢𝙖𝙣𝙙𝙖𝙩𝙤𝙧𝙮.
+2. <a href="https://t.me/Imdbfilter_bot">`×[¤ ​️🇮🇳𝘾𝙞𝙣𝙙𝙚𝙧𝙚𝙡𝙡𝙖 𝙏𝙜🇮🇳¤]×´</a> 𝙨𝙪𝙥𝙥𝙤𝙧𝙩𝙨 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙬𝙞𝙩𝙝 𝙖𝙣𝙮 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙢𝙚𝙙𝙞𝙖 𝙩𝙮𝙥𝙚.
+3. 𝘽𝙪𝙩𝙩𝙤𝙣𝙨 𝙨𝙝𝙤𝙪𝙡𝙙 𝙗𝙚 𝙥𝙧𝙤𝙥𝙚𝙧𝙡𝙮 𝙥𝙖𝙧𝙨𝙚𝙙 𝙖𝙨 𝙢𝙖𝙧𝙠𝙙𝙤𝙬𝙣 𝙛𝙤𝙧𝙢𝙖𝙩
 
-<b>URL buttons:</b>
-<code>[Button Text](buttonurl:https//t.me/𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆)</code>
+<b>𝐔𝐑𝐋 𝐛𝐮𝐭𝐭𝐨𝐧𝐬:</b>
+<code>[Button Text](buttonurl:https//t.me/Cinderella)</code>
 
-<b>Alert buttons:</b>
+<b>𝐀𝐥𝐞𝐫𝐭 𝐛𝐮𝐭𝐭𝐨𝐧𝐬:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
+    AUTOFILTER_TXT = """𝐇𝐞𝐥𝐩: <b>𝘼𝙪𝙩𝙤 𝙁𝙞𝙡𝙩𝙚𝙧</b>
 
-<b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. make sure that your channel does not contains cam rip, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
-    CONNECTION_TXT = """Help: <b>Connections</b>
+<b>𝐍𝐎𝐓𝐄:</b>
+1. 𝙈𝙖𝙠𝙚 𝙢𝙚 𝙩𝙝𝙚 𝙖𝙙𝙢𝙞𝙣 𝙤𝙛 𝙮𝙤𝙪𝙧 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙞𝙛 𝙞𝙩'𝙨 𝙥𝙧𝙞𝙫𝙖𝙩𝙚.
+2. 𝙢𝙖𝙠𝙚 𝙨𝙪𝙧𝙚 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪𝙧 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙙𝙤𝙚𝙨 𝙣𝙤𝙩 𝙘𝙤𝙣𝙩𝙖𝙞𝙣𝙨 𝙘𝙖𝙢 𝙧𝙞𝙥, 𝙥𝙤𝙧𝙣 𝙖𝙣𝙙 𝙛𝙖𝙠𝙚 𝙛𝙞𝙡𝙚𝙨.
+3. 𝙁𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙝𝙚 𝙡𝙖𝙨𝙩 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙩𝙤 𝙢𝙚 𝙬𝙞𝙩𝙝 𝙦𝙪𝙤𝙩𝙚𝙨.
+4. 𝙄'𝙡𝙡 𝙖𝙙𝙙 𝙖𝙡𝙡 𝙩𝙝𝙚 𝙛𝙞𝙡𝙚𝙨 𝙞𝙣 𝙩𝙝𝙖𝙩 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙩𝙤 𝙢𝙮 𝙙𝙗."""
+    CONNECTION_TXT = """𝐇𝐞𝐥𝐩: <b>𝘾𝙤𝙣𝙣𝙚𝙘𝙩𝙞𝙤𝙣𝙨</b>
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+- 𝙐𝙨𝙚𝙙 𝙩𝙤 𝙘𝙤𝙣𝙣𝙚𝙘𝙩 𝙗𝙤𝙩 𝙩𝙤 𝙋𝙈 𝙛𝙤𝙧 𝙢𝙖𝙣𝙖𝙜𝙞𝙣𝙜 𝙛𝙞𝙡𝙩𝙚𝙧𝙨 
+- 𝙞𝙩 𝙝𝙚𝙡𝙥𝙨 𝙩𝙤 𝙖𝙫𝙤𝙞𝙙 𝙨𝙥𝙖𝙢𝙢𝙞𝙣𝙜 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥𝙨.
 
-<b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+<b>𝐍𝐎𝐓𝐄:</b>
+1. 𝙊𝙣𝙡𝙮 𝙖𝙙𝙢𝙞𝙣𝙨 𝙘𝙖𝙣 𝙖𝙙𝙙 𝙖 𝙘𝙤𝙣𝙣𝙚𝙘𝙩𝙞𝙤𝙣.
+2. 𝙎𝙚𝙣𝙙 <code>/connect</code> 𝙛𝙤𝙧 𝙘𝙤𝙣𝙣𝙚𝙘𝙩𝙞𝙣𝙜 𝙢𝙚 𝙩𝙤 𝙪𝙧 𝙋𝙈
 
-<b>Commands and Usage:</b>
+<b>𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:</b>
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    EXTRAMOD_TXT = """𝐇𝐞𝐥𝐩: <b>Extra Modules</b>
 
-<b>NOTE:</b>
+<b>𝐍𝐎𝐓𝐄:</b>
 these are the extra features of 𝕮𝖎𝖓𝖉𝖊𝖗𝖊𝖑𝖑𝖆
 
-<b>Commands and Usage:</b>
+<b>𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:</b>
 • /id - <code>get id of a specifed user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+    ADMIN_TXT = """𝐇𝐞𝐥𝐩: <b>Admin mods</b>
 
-<b>NOTE:</b>
+<b>𝐍𝐎𝐓𝐄:</b>
 This module only works for my admins
 
-<b>Commands and Usage:</b>
+<b>𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:</b>
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /users - <code>to get list of my users and ids.</code>
