@@ -14,11 +14,8 @@ from utils import get_size, is_subscribed, temp
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/4629d875d37255f891289.jpg",
-    "https://telegra.ph/file/f6f4d7cf4452f2c63dd3d.jpg",
-    "https://telegra.ph/file/8d64512dd6584f371e2a5.jpg",
-    "https://telegra.ph/file/bab7cd39a3d7a2d377b66.jpg",
-    "https://telegra.ph/file/c9f6b0978356de3bddfdc.jpg"
+    "https://telegra.ph/file/2f8a89f44fae6d8f89fad.jpg",
+    "https://telegra.ph/file/a774e6d1169b0672a5db9.jpg"
 ]
 
 @Client.on_message(filters.command("start"))
