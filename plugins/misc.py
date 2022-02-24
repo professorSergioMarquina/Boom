@@ -202,7 +202,7 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await query.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await query.message.reply_photo(photo="https://telegra.ph/file/7e218e7bc97387a903ddb.jpg", caption=caption, reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             print(e)
             await query.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
