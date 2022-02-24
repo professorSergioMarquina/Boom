@@ -624,6 +624,9 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
         )
+        btn.insert(0,
+            [InlineKeyboardButton(f"🔮{search}🔮",url="https://t.me/UrvashiTheaters")]
+        )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
         cap = IMDB_TEMPLATE.format(
