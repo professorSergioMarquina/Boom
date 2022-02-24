@@ -135,7 +135,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
                 InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}"),
-                InlineKeyboardButton(f"{message.chat.title}", callback_data="pages"),
+                InlineKeyboardButton(f"{title}", callback_data="pages"),
             ],
         )
         btn.insert(0,
