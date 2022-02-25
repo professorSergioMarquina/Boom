@@ -114,32 +114,29 @@ async def next_page(bot, query):
             for file in files
         ]
 
-    if 0 < offset <= 10:
+    if 0 < offset <= 20:
         off_set = 0
     elif offset == 0:
         off_set = None
     else:
-        off_set = offset - 10
+        off_set = offset - 20
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 𝙿𝚊𝚐𝚎𝚜 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages") InlineKeyboardButton("pooi", callback_data="pages")]
-        )
-        btn.insert(0,
-            [InlineKeyboardButton(f"🔰 {search} 🎭",callback_data="pages")]
+            [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📃 Pages {round(int(offset) / 10) + 1} / {round(total / 10)}",
+                                  callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🔰 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append(
+            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("👈 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 👉", callback_data=f"next_{req}_{key}_{n_offset}"),
-                InlineKeyboardButton("pooi", callback_data="pages"),
+                InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
-        )
-        btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     try:
         await query.edit_message_reply_markup( 
@@ -625,16 +622,18 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"😬 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐞𝐱𝐭 ⏩",callback_data=f"next_{req}_{key}_{offset}") InlineKeyboardButton(text="Kurrapppu",callback_data=f"pages")]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+        )
         btn.insert(0,
-            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
+            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️",url="https://t.me/UrvashiTheaters")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="😳 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(f"🙄 {search} 🎭",callback_data="pages")]
+            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️",url="https://t.me/UrvashiTheaters")]
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
