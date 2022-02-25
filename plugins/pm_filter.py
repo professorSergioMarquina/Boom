@@ -129,6 +129,7 @@ async def next_page(bot, query):
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton("🔰haii", callback_data="pages")])
     else:
         btn.append(
             [
@@ -136,6 +137,9 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
                 InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
+        )
+        btn.append(
+            [InlineKeyboardButton("Makkaeeee🔰", callback_data="pages")]
         )
     try:
         await query.edit_message_reply_markup( 
