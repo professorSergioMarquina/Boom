@@ -100,8 +100,8 @@ async def get_poster(query, bulk=False, id=False):
             plot = plot[0]
     else:
         plot = movie.get('plot outline')
-    if plot and len(plot) > 144:
-        plot = plot[0:144] + "..."
+    if plot and len(plot) > 134:
+        plot = plot[0:134] + "..."
 
     return {
         'title': movie.get('title'),
