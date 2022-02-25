@@ -131,14 +131,14 @@ async def next_page(bot, query):
             [InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"🔰 {round(total/10)} 𝐏𝐚𝐠𝐞𝐬", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("Makkalz🔰", callback_data="pages")]
+            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🔰 {round(total/10)} 𝐏𝐚𝐠𝐞𝐬", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append([InlineKeyboardButton("🔰haii", callback_data="pages")])
+        btn.append([InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")])
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
@@ -151,7 +151,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton("Makkaeeee🔰", callback_data="pages")]
+            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
@@ -643,7 +643,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"🔰 {round(int(total_results)/10)} 𝐏𝐚𝐠𝐞𝐬",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐞𝐱𝐭 ⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton("🔰latest 1🔰", callback_data="pages")]
+            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
@@ -653,7 +653,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🔰 1 𝐏𝐚𝐠𝐞",callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("🔰latest 2🔰", callback_data="pages")]
+            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
