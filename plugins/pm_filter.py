@@ -23,6 +23,12 @@ from database.filters_mdb import(
 BUTTONS = {}
 SPELL_CHECK = {}
 
+@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
+async def give_filter(client, message):
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
+
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
     group_id = message.chat.id
@@ -128,13 +134,13 @@ async def next_page(bot, query):
             [InlineKeyboardButton("Makkalz🔰", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️1",url="https://t.me/UrvashiTheaters")]
+            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append([InlineKeyboardButton("🔰haii", callback_data="pages")])
         btn.insert(0,
-            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്2✨️",url="https://t.me/UrvashiTheaters")]
+            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     else:
         btn.append(
@@ -148,7 +154,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton("Makkaeeee🔰", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️3",url="https://t.me/UrvashiTheaters")]
+            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     try:
         await query.edit_message_reply_markup( 
@@ -640,7 +646,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("🔰latest 1🔰", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️5",url="https://t.me/UrvashiTheaters")]
+            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     else:
         btn.append(
@@ -650,7 +656,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("🔰latest 2🔰", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="✨️ഉർവശി തീയറ്റേഴ്‌സ്✨️6",url="https://t.me/UrvashiTheaters")]
+            [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
