@@ -101,7 +101,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"✨️[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -146,7 +146,7 @@ async def next_page(bot, query):
         btn.append(
             [
                 InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🔰 {round(int(offset)/10)+1} / {round(total/10)} 𝐏𝐚𝐠𝐞𝐬", callback_data="pages"),
+                InlineKeyboardButton(f"🔰 {round(int(offset)/10)+1}𝐭𝐡 𝐏𝐚𝐠𝐞", callback_data="pages"),
                 InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
