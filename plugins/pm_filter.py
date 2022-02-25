@@ -114,15 +114,18 @@ async def next_page(bot, query):
             for file in files
         ]
 
-    if 0 < offset <= 20:
+    if 0 < offset <= 15:
         off_set = 0
     elif offset == 0:
         off_set = None
     else:
-        off_set = offset - 20
+        off_set = offset - 15
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 𝙿𝚊𝚐𝚎𝚜 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
+        )
+        btn.append(
+            [InlineKeyboardButton("Makkalz🔰", callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
