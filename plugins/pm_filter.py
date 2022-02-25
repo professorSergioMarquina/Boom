@@ -627,9 +627,15 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐞𝐱𝐭 ⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
+        btn.append(
+            [InlineKeyboardButton("🔰latest 1🔰", callback_data="pages")]
+        )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
+        )
+        btn.append(
+            [InlineKeyboardButton("🔰latest 2🔰", callback_data="pages")]
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
