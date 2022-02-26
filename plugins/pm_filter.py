@@ -214,8 +214,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
 
         elif chat_type in ["group", "supergroup"]:
-            grp_id = query.message.chat.id
-            title = query.message.chat.title
+            grp_id = message.chat.id
+            title = message.chat.title
 
         else:
             return
@@ -645,7 +645,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"🔰 {round(int(total_results)/10)} 𝐏𝐚𝐠𝐞𝐬",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐞𝐱𝐭 ⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
+            [InlineKeyboardButton(f"{message.chat.title}",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
@@ -655,7 +655,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🔰 1 𝐏𝐚𝐠𝐞 🔰",callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("📣 ഉർവശി തീയറ്റേഴ്‌സ് 📣",url="https://t.me/redirecturvashi")]
+            [InlineKeyboardButton(f"{message.chat.title}",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
