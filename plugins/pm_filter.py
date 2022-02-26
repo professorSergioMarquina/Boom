@@ -25,38 +25,6 @@ from database.filters_mdb import(
 BUTTONS = {}
 SPELL_CHECK = {}
 
-@Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
-    if query.data == "close_data":
-        await query.message.delete()
-    elif query.data == "delallconfirm":
-        userid = query.from_user.id
-        chat_type = query.message.chat.type
-
-        if chat_type == "private":
-            grpid  = await active_connection(str(userid))
-            if grpid is not None:
-                grp_id = grpid
-                try:
-                    chat = await client.get_chat(grpid)
-                    title = chat.title
-                except:
-                    await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return
-            else:
-                await query.message.edit_text(
-                    "I'm not connected to any groups!\nCheck /connections or connect to any groups",
-                    quote=True
-                )
-                return
-
-        elif chat_type in ["group", "supergroup"]:
-            grp_id = message.chat.id
-            title = message.chat.title
-
-        else:
-            return
-
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)
@@ -67,6 +35,7 @@ async def give_filter(client, message):
 async def give_filter(client,message):
     group_id = message.chat.id
     name = message.text
+    title = message.chat.title
 
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
@@ -172,7 +141,7 @@ async def next_page(bot, query):
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🔰 {round(total/10)} 𝐏𝐚𝐠𝐞𝐬", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append([InlineKeyboardButton("📣 {message.chat.title} 📣",url="https://t.me/redirecturvashi")])
+        btn.append([InlineKeyboardButton("📣 {message.chat.title}  📣",url="https://t.me/redirecturvashi")])
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
@@ -185,7 +154,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton(f"📣 {message.chat.title} 📣",url="https://t.me/redirecturvashi")]
+            [InlineKeyboardButton(f"📣 ഉർവശി തീയറ്റേഴ്‌സ്  📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
