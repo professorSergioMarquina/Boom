@@ -604,9 +604,22 @@ async def auto_filter(client, msg, spoll=False):
             search = message.text
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
-                if SPELL_CHECK_REPLY:
-                    return await advantage_spell_chok(msg)
-                else:
+                if SEPLLING_MODE == "on":
+                LuciferMoringstar_Robot=await message.replay_sticker(                   
+                    chat_id = message.chat.id,
+                    sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
+                    reply_markup = InlineKeyboardMarkup([[
+                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
+                 ],[
+                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q"),
+                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search")
+                 ]]  
+                ),
+              reply_to_message_id=message.message_id
+                )
+                await asyncio.sleep(20) 
+                await LuciferMoringstar_Robot.delete()               
+                 else:
                     return
         else:
             return
