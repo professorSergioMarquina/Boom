@@ -707,7 +707,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if SEPLLING_MODE == "on":
-                LuciferMoringstar_Robot=await client.send_sticker(                   
+                LuciferMoringstar_Robot=await message.replay_sticker(                   
                     chat_id = message.chat.id,
                     sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
                     reply_markup = InlineKeyboardMarkup([[
