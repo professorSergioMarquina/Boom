@@ -25,6 +25,38 @@ from database.filters_mdb import(
 BUTTONS = {}
 SPELL_CHECK = {}
 
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
+    if query.data == "close_data":
+        await query.message.delete()
+    elif query.data == "delallconfirm":
+        userid = query.from_user.id
+        chat_type = query.message.chat.type
+
+        if chat_type == "private":
+            grpid  = await active_connection(str(userid))
+            if grpid is not None:
+                grp_id = grpid
+                try:
+                    chat = await client.get_chat(grpid)
+                    title = chat.title
+                except:
+                    await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
+                    return
+            else:
+                await query.message.edit_text(
+                    "I'm not connected to any groups!\nCheck /connections or connect to any groups",
+                    quote=True
+                )
+                return
+
+        elif chat_type in ["group", "supergroup"]:
+            grp_id = message.chat.id
+            title = message.chat.title
+
+        else:
+            return
+
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)
@@ -121,10 +153,6 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-
-elif chat_type in ["group", "supergroup"]:
-            grp_id = message.chat.id
-            title = message.chat.title
 
     if 0 < offset <= 10:
         off_set = 0
