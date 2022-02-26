@@ -662,7 +662,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
-        cap = TEMPLATE.format(
+        cap = IMDB_TEMPLATE.format(
             group = message.chat.title,
             requested = message.from_user.mention,        
             query = search,
