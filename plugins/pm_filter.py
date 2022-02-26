@@ -604,23 +604,12 @@ async def auto_filter(client, msg, spoll=False):
             search = message.text
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
-                if SEPLLING_MODE == "on":
-                LuciferMoringstar_Robot=await message.replay_sticker(                   
-                    chat_id = message.chat.id,
-                    sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
-                    reply_markup = InlineKeyboardMarkup([[
-                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
-                 ],[
-                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search")
-                 ]]  
-                ),
-              reply_to_message_id=message.message_id
-                )
-                await asyncio.sleep(20) 
-                await LuciferMoringstar_Robot.delete()               
-                 else:
+                if SPELL_CHECK_REPLY:
+                    return await advantage_spell_chok(msg)
+                else:
                     return
+        else:
+            return
         else:
             return
     else:
@@ -719,21 +708,8 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    if SEPLLING_MODE == "on":
-                LuciferMoringstar_Robot=await message.replay_sticker(                   
-                    chat_id = message.chat.id,
-                    sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
-                    reply_markup = InlineKeyboardMarkup([[
-                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
-                 ],[
-                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search")
-                 ]]  
-                ),
-              reply_to_message_id=message.message_id
-                )
-                await asyncio.sleep(20) 
-                await LuciferMoringstar_Robot.delete()               
+    if spoll:
+        await msg.message.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|send|snd|movie(s)?|new|latest|br((o|u)h?)*|^h(e)?(l)*(o)*|mal(ayalam)?|tamil|file|that|give|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle)", "", msg.text) # plis contribute some common words 
