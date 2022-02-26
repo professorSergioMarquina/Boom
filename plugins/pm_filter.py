@@ -35,7 +35,7 @@ async def give_filter(client, message):
 async def give_filter(client,message):
     group_id = message.chat.id
     name = message.text
-    title = message.chat.title
+    title = chat.title
 
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
