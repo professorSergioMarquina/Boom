@@ -35,7 +35,6 @@ async def give_filter(client, message):
 async def give_filter(client,message):
     group_id = message.chat.id
     name = message.text
-    title = chat.title
 
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
@@ -134,14 +133,14 @@ async def next_page(bot, query):
             [InlineKeyboardButton("⏪ 𝐁𝐚𝐜𝐤", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f" {round(total/10)} 𝐏𝐚𝐠𝐞𝐬 🔰", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton(f"📣 {message.chat.title} 📣",url="https://t.me/redirecturvashi")]
+            [InlineKeyboardButton(f"📣 **ഉർവശി തീയറ്റേഴ്‌സ്** 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
     elif off_set is None:
         btn.append([InlineKeyboardButton(f"🔰 {round(total/10)} 𝐏𝐚𝐠𝐞𝐬", callback_data="pages"), InlineKeyboardButton(" 𝐍𝐞𝐱𝐭 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append([InlineKeyboardButton("📣 {message.chat.title}  📣",url="https://t.me/redirecturvashi")])
+        btn.append([InlineKeyboardButton("📣 **ഉർവശി തീയറ്റേഴ്‌സ്** 📣",url="https://t.me/redirecturvashi")])
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
         )
@@ -154,7 +153,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton(f"📣 ഉർവശി തീയറ്റേഴ്‌സ്  📣",url="https://t.me/redirecturvashi")]
+            [InlineKeyboardButton(f"📣 **ഉർവശി തീയറ്റേഴ്‌സ്** 📣",url="https://t.me/redirecturvashi")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="pages")]
