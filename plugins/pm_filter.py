@@ -177,14 +177,14 @@ async def advantage_spoll_choker(bot, query):
         return await query.answer("ഇത്‌ നിനക്ക് ഉള്ളത് അല്ല🤧", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
-    await query.answer('Checking for Movie in database...')
+    await query.answer('🔎')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase')
-        await asyncio.sleep(10)
+        k = await query.message.edit('💔This Movie Not Found In DataBase Please Contact @PromotionMediator (admin) To add this File')
+        await asyncio.sleep(6)
         await k.delete()
 
 
@@ -707,8 +707,8 @@ async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|send|snd|movie(s)?|new|latest|br((o|u)h?)*|^h(e)?(l)*(o)*|mal(ayalam)?|tamil|file|that|give|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle)", "", msg.text) # plis contribute some common words 
     query = query.strip()
     if not query:
-        k = await msg.reply("No valid movie name given")
-        await asyncio.sleep(8)
+        k = await msg.reply("ഇങ്ങനെ ഒക്കെ സിനിമ ഉണ്ടോ🙄🤣Check Actual Spelling Now?")
+        await asyncio.sleep(6)
         await k.delete()
         return
     user = msg.from_user.id if msg.from_user else 0
@@ -716,8 +716,8 @@ async def advantage_spell_chok(msg):
     movielist = [movie.get('title') for movie in imdb_s]
     splitted = query.split()
     if len(splitted) > 10:
-        k = await msg.reply("Are you telling the story of some movie??")
-        await asyncio.sleep(8)
+        k = await msg.reply("Sent Movie Name Only😬Dont Describe Okay")
+        await asyncio.sleep(6)
         await k.delete()
         return
     if len(splitted) > 1:
@@ -734,7 +734,7 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply('I cant find anything related to that\nDid you mean any one of these?', reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply('You Entered Wrong Spelling Of That Movie..Watch Below Button Pick Your Correct Movie Name🚀', reply_markup=InlineKeyboardMarkup(btn))
     
 
 
