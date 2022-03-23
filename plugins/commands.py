@@ -27,7 +27,7 @@ async def start(client, message):
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data='help')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -42,12 +42,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+    ],[
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_(
-            photo=f"{random.choice(PHOTO)}",
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_message(
+            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -77,21 +81,16 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-        InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('🤴 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬', callback_data='source'),
-        InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛠', url='http://t.me/EvaMariaSupport')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('🙌 𝐇𝐞𝐥𝐩', callback_data='help'),
-        InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 🤖', callback_data='about')
-    ],[
-        InlineKeyboardButton('🎉 𝐀𝐜𝐭𝐢𝐯𝐞𝐬', callback_data='stats'),
-        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=f"{random.choice(PHOTO)}",
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_message(
+            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
