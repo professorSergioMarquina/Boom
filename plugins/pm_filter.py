@@ -437,16 +437,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('🤴 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬', callback_data='source'),
-        InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛠', url='http://t.me/EvaMariaSupport')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('🙌 𝐇𝐞𝐥𝐩', callback_data='help'),
-        InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭 🤖', callback_data='about')
-    ],[
-        InlineKeyboardButton('🎉 𝐀𝐜𝐭𝐢𝐯𝐞𝐬', callback_data='stats'),
-        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩 ✨️', url='https://t.me/UrvashiTheaters')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -456,17 +452,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🤴 𝐌𝐚𝐧𝐮𝐞𝐥 𝐅𝐢𝐥𝐭𝐞𝐫', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝐀𝐮𝐭𝐨 𝐅𝐢𝐥𝐭𝐞𝐫 🛠', callback_data='autofilter')
-            ],[
-            InlineKeyboardButton('🙌 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐨𝐧', callback_data='coct'),
-            InlineKeyboardButton('𝐄𝐱𝐭𝐫𝐚 𝐌𝐨𝐝𝐬 🤖', callback_data='extra')
-            ],[
-            InlineKeyboardButton('🎉 𝐇𝐨𝐦𝐞', callback_data='start'),
-            InlineKeyboardButton('𝐈𝐧𝐟𝐨 ✨️', callback_data='stats')
-        ]]
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+    ],[
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
+    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
