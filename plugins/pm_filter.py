@@ -441,8 +441,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -456,8 +454,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
