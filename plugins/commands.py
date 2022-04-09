@@ -26,8 +26,6 @@ async def start(client, message):
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -46,8 +44,6 @@ async def start(client, message):
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -85,8 +81,6 @@ async def start(client, message):
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
